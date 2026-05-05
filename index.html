@@ -1,10 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <title>4HOPE 餐厅</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>澜庭 LANTING 餐厅</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", Arial, sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+    }
+    .hero {
+      min-height: 100vh;
+      padding: 36px 22px;
+      background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.85)),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 90px;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+    .tag {
+      padding: 8px 14px;
+      border: 1px solid rgba(255,255,255,.35);
+      border-radius: 999px;
+      font-size: 13px;
+    }
+    h1 {
+      font-size: 52px;
+      line-height: 1.05;
+      margin: 0 0 18px;
+    }
+    .desc {
+      color: #ddd;
+      font-size: 17px;
+      line-height: 1.7;
+      max-width: 520px;
+    }
+    .buttons {
+      margin-top: 34px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    button {
+      border: none;
+      padding: 15px 24px;
+      border-radius: 999px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .primary { background: #f5c46b; color: #111; }
+    .secondary { background: rgba(255,255,255,.14); color: #fff; border: 1px solid rgba(255,255,255,.25); }
+    .section {
+      padding: 44px 22px;
+      background: #111;
+    }
+    .section h2 {
+      font-size: 30px;
+      margin-bottom: 22px;
+    }
+    .cards {
+      display: grid;
+      gap: 18px;
+    }
+    .card {
+      background: #1b1b1b;
+      border-radius: 22px;
+      padding: 22px;
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    .card h3 { margin: 0 0 8px; font-size: 22px; }
+    .price { color: #f5c46b; font-weight: 800; }
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #aaa;
+      background: #080808;
+    }
+  </style>
 </head>
-<body style="text-align:center;font-family:sans-serif;">
-  <h1>🔥 欢迎来到 demo 餐厅</h1>
-  <p>未来感用餐体验 · 在线预定即将上线</p>
+<body>
+  <div class="hero">
+    <div class="nav">
+      <div class="logo">澜庭 LANTING</div>
+      <div class="tag">预约制餐厅</div>
+    </div>
+
+    <h1>城市夜色里的<br>高级用餐体验</h1>
+    <p class="desc">
+      澜庭是一家融合东方风味与现代美学的概念餐厅。
+      我们提供精致主厨菜单、私密座位预约与沉浸式晚餐体验。
+    </p>
+
+    <div class="buttons">
+      <button class="primary">立即预约座位</button>
+      <button class="secondary">查看菜单</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>招牌菜单</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>黑松露慢烤牛排</h3>
+        <p>低温慢烤，搭配黑松露酱汁与烤时蔬。</p>
+        <div class="price">¥168</div>
+      </div>
+      <div class="card">
+        <h3>炭火柚香鸡排</h3>
+        <p>炭火焦香与清爽柚香结合，层次丰富。</p>
+        <div class="price">¥88</div>
+      </div>
+      <div class="card">
+        <h3>星空莓果气泡饮</h3>
+        <p>莓果、气泡水与特调糖浆，适合拍照打卡。</p>
+        <div class="price">¥36</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>预约信息</h2>
+    <div class="card">
+      <p>营业时间：17:30 - 23:30</p>
+      <p>地址：城市中心 · 美食街 88 号</p>
+      <p>电话：000-8888-8888</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2026 澜庭 LANTING Restaurant
+  </div>
 </body>
 </html>
